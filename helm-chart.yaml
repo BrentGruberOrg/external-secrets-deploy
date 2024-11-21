@@ -1,0 +1,10 @@
+# https://github.com/kubernetes-sigs/kustomize/issues/4593
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: external-secrets
+name: external-secrets
+namespace: external-secrets
+releaseName: external-secrets
+repo: https://charts.external-secrets.io
+valuesFile: values.yaml
